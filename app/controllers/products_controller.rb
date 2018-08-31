@@ -1,8 +1,8 @@
 class ProductsController < ApplicationController
   def index
 
-    @items = cart
-  
+    @items = cart if cart.present?
+
   end
 
   def add
