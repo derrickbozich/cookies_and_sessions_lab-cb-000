@@ -9,7 +9,6 @@ class ProductsController < ApplicationController
     if params[:item].present?
       cart << params[:item]
       redirect_to products_index_path
-
     end
 
   end

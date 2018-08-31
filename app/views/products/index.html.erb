@@ -2,6 +2,7 @@
 <ul>
   <% if @items.present? %>
     <% @items.each do |i| %>
+      <% binding.pry %>
       <li> <%= i %></li>
     <% end %>
   <% end %>
