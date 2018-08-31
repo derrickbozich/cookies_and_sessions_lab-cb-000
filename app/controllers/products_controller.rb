@@ -1,7 +1,7 @@
 class ProductsController < ApplicationController
   def index
 
-    @items = cart if cart
+    @items = cart 
 
   end
 
