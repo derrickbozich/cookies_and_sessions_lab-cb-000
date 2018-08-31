@@ -8,6 +8,6 @@ class ProductsController < ApplicationController
   def add
     cart << params[:item]
 
-    redirect_to :index_url
+    redirect_to products_index_path
   end
 end
