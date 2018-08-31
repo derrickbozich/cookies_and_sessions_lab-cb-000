@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
   def add
     if params[:product].present?
       cart << params[:product]
-      redirect_to products_index_path
+      render :index
     end
 
   end
