@@ -1,8 +1,8 @@
 class ProductsController < ApplicationController
   def index
-    
+
     @items = cart if cart.present?
-    binding.pry
+
   end
 
   def add
