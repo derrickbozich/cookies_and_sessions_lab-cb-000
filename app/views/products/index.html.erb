@@ -2,6 +2,7 @@
 <ul>
   <% if cart %>
     <% cart.each do |product| %>
+      <% binding.pry %>
       <li><%= product %></li>
     <% end %>
   <% end %>
